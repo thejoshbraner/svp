@@ -11,6 +11,18 @@
     "default" : 1
   },
   "children" : [ {
+    "id" : "aa69460b-b9d9-2dac-a2b7-c5e0dc120ef7",
+    "name" : "group_title",
+    "label" : "Group Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Group Title"
+  }, {
     "id" : "66621fc6-fedf-07e7-7c09-f855e009782b",
     "name" : "badge",
     "label" : "Badge",
@@ -198,18 +210,6 @@
       "color" : null,
       "opacity" : 100
     }
-  }, {
-    "id" : "aa69460b-b9d9-2dac-a2b7-c5e0dc120ef7",
-    "name" : "group_title",
-    "label" : "Group Title",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "display_width" : null,
-    "default" : "Group Title"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
