@@ -14,7 +14,7 @@
     "id" : "aa69460b-b9d9-2dac-a2b7-c5e0dc120ef7",
     "name" : "group_title",
     "label" : "Group Title",
-    "required" : false,
+    "required" : true,
     "locked" : false,
     "validation_regex" : "",
     "allow_new_line" : false,
