@@ -1,0 +1,91 @@
+.badge-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.badge-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.badge-group-header {
+  padding: 15px 0;
+}
+
+.badge-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  width: fit-content; /* Scale with viewport */
+}
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .badge-container {
+    flex-wrap: wrap;
+    justify-content: center; /* Ensures items are centered when wrapping */
+  }
+  .animation-line {
+    display: none;
+  }
+}
+
+.animation-line {
+  position: absolute;
+  bottom: 37px;
+  width: 100%;
+  height: 15px; /* Scales proportionally */
+  background: linear-gradient(to right, #4FCAC8, #2087C6);
+  transform: translateY(-50%);
+  animation: line-move 1.5s ease-out forwards;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px; /* Scale text */
+  width: 100px;
+}
+.badge-text {
+  max-width: 100%;
+}
+
+.svg-wrapper {
+  display: inline-block;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 100px; /* Scale dynamically */
+  height: 100px;
+  cursor: pointer;
+}
+
+.svg-wrapper:hover {
+  transform: scale(1.1);
+}
+
+/* Dashed border animation */
+.dashed-border {
+  stroke-dasharray: 4 16.195; /* 4px dash, 16.195px gap */
+  stroke-dashoffset: 282.74; /* Start hidden */
+  animation: dash-reveal 1.5s ease-out forwards;
+}
+
+/* ANIMATIONS */
+@keyframes dash-reveal {
+  0% { stroke-dashoffset: 40; opacity: 0; }
+  100% { stroke-dashoffset: 0; opacity: 1; }
+}
+@keyframes line-move {
+  from { width: 0%; }
+  to { width: calc(100% - 60px); }
+}
